@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>MJ Bank</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+    </head>
+<body class="homepage is-preload">
+
+ <title>{% block title %} {% endblock %}</title>
+  
+  <div id="page-wrapper">
+
+            <!-- Header -->
+                <div id="header-wrapper">
+                    <div class="container">
+
+                        <!-- Header -->
+                            <header id="header">
+                                <div class="inner">
+
+                                    <!-- Logo -->
+                                        <h1><a href="home.html" id="logo">MJ Bank</a></h1>
+
+                                    <!-- Nav -->
+                                        <nav id="nav">
+                                            <ul>
+                                                <li class="current_page_item"><a href="index.html">Home</a></li>
+                                                <li>
+                                                    <a href="#">Services</a>
+                                                    <ul>
+                                                        <li><a href="#">Internet Banking</a></li>
+                                                        <li><a href="#">Personal</a></li>
+                                                        <li>
+                                                            <a href="#">Business</a>
+
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="no-sidebar.html">About Us</a></li>
+                                                <li><a href="right-sidebar.html">Investor</a></li>
+                                                <li><a href="left-sidebar.html">Contact Us</a></li>
+                                            </ul>
+                                        </nav>
+
+                                </div>
+                            </header>
+
+                        <!-- Banner -->
+                            <div id="banner">
+                                <h2>Your life. Your Money. MY Bank.
+                                <br />
+                                </h2>
+
+                                <a href="{{ url_for('home')}}" class="button large icon solid fa-check-circle">Chat Now</a>
+                            </div>
+
+                    </div>
+                </div>
+
+            <!-- Main Wrapper -->
+                <div id="main-wrapper">
+                    <div class="wrapper style1">
+                        <div class="inner">
+
+                            <!-- Feature 1 -->
+                                <section class="container box feature1">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <header class="first major">
+                                                <h2>Featured Services</h2>
+                                                <p>With a customer base of over 3.5 million customers — <strong>MJ Bank is at the forefront</strong> of the banking and financial services sector in Pakistan. .</p>
+                                            </header>
+                                        </div>
+                                        <div class="col-4 col-12-medium">
+                                            <section>
+                                                <a href="#" class="image featured"><img src="{{ url_for('static', filename='images/header.jpg') }}" alt="" /></a>
+                                                <header class="second icon solid fa-user">
+                                                    <h3>Credit Cards</h3>
+
+                                                </header>
+                                            </section>
+                                        </div>
+                                        <div class="col-4 col-12-medium">
+                                            <section>
+                                                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                                                <header class="second icon solid fa-cog">
+                                                    <h3>Consumer Loans</h3>
+
+                                                </header>
+                                            </section>
+                                        </div>
+                                        <div class="col-4 col-12-medium">
+                                            <section>
+                                                <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                                                <header class="second icon solid fa-chart-bar">
+                                                    <h3>Home Remittance</h3>
+
+                                                </header>
+                                            </section>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+                        </div>
+                    </div>
+
+
+
+            <!-- Footer Wrapper -->
+                <div id="footer-wrapper">
+                    <footer id="footer" class="container">
+                        <div class="row">
+                            <div class="col-3 col-6-medium col-12-small">
+
+                                <!-- Links -->
+                                    <section>
+                                        <h2>About MJ Bank</h2>
+                                        <ul class="divided">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">President's Message</a></li>
+                                            <li><a href="#">Board of Directors</a></li>
+                                            <li><a href="#">Rates</a></li>
+                                            <li><a href="#">Media Room</a></li>
+                                            <li><a href="#">Sustainability</a></li>
+
+                                        </ul>
+                                    </section>
+
+                            </div>
+                            <div class="col-3 col-6-medium col-12-small">
+
+                                <!-- Links -->
+                                    <section>
+                                        <h2>Locate Us</h2>
+                                        <ul class="divided">
+                                            <li><a href="#">Branch Locator</a></li>
+                                            <li><a href="#">Branch List</a></li>
+                                            <li><a href="#">Saturday Branch List</a></li>
+                                            <li><a href="#">Prize Bond Branches</a></li>
+                                        </ul>
+                                    </section>
+
+                                <!-- Links -->
+                                    <section>
+                                        <h2>More</h2>
+                                        <ul class="col-6 col-12-small">
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Schedule of Charges</a></li>
+                                            <li><a href="#">Consumer Protection</a></li>
+                                            <li><a href="#">Disclaimer</a></li>
+                                            <li><a href="#">Site Map</a></li>
+                                        </ul>
+                                    </section>
+
+                            </div>
+                            <div class="col-6 col-12-medium imp-medium">
+
+
+
+                            </div>
+                            <div class="col-12">
+                                <div id="copyright">
+                                    <ul class="menu">
+                                        <li>&copy; MJ Bank. All rights reserved</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+
+        </div>
+
+        <!-- Scripts -->
+            <script src="python\borus\borus\templates\assets\js"></script>
+            <script src="python\borus\borus\templates\assets\js/jquery.dropotron.min.js"></script>
+            <script src="python\borus\borus\templates\assets\js/browser.min.js"></script>
+            <script src="python\borus\borus\templates\assets\js/breakpoints.min.js"></script>
+            <script src="python\borus\borus\templates\assets\js/util.js"></script>
+            <script src="python\borus\borus\templates\assets\js/main.js"></script>
+</div>
+
+   
+    
+        {% block content %} {% endblock %}
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </body>
+</html>
